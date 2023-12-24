@@ -13,7 +13,7 @@ import java.util.function.Function;
 
 public class JwtTokenUtil {
 
-    private final SecretKey secretKey; // Initialize this with your secret key
+    private final SecretKey secretKey;
 
     public JwtTokenUtil() {
         byte[] decodedKey = Base64.getDecoder().decode(System.getenv("JWT_USER_MS_KEY"));
